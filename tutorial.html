@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
 
-<p> Welcome to my first web page! 122</p>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jumbopets</title>
+</head>
+<link rel="stylesheet" href="./static/css/style.css">
+<link rel="stylesheet" href="./static/css/swiper.min.css">
+
+
+<body>
+  <div class="head">
+    <div class="input">
+      <img src="./static/img/search.png" class="icon searchimg">
+      <input>
+    </div>
+    <div class="logo">
+      <img src="./static/img/logo.png">
+    </div>
+    <div class="fc fe">
+      <img src="./static/img/user.png" class="icon">
+      <img src="./static/img/car.png" class="icon">
+    </div>
+  </div>
+  <div class="menu">
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="banner"></div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="catalogue">
+    <div class="title">Catalogue</div>
+    <div class="box">
+      <div class="item">
+        <img src="./static/img/user.png">
+      </div>
+      <div class="item">
+        <img src="./static/img/user.png">
+      </div>
+      <div class="item">
+        <img src="./static/img/user.png">
+      </div>
+      <div class="item">
+        <img src="./static/img/user.png">
+      </div>
+    </div>
+    <div class="catalogue">
+      <div class="title">Our Product</div>
+      <div class="box">
+        <div class="item2">
+          <div class="fdx">
+            <img src="./static/img/user.png">
+            <div class="desc">Hill's Prescription Diet Metabolic Dog Food</div>
+            <div class="desc">$ 123</div>
+          </div>
+         
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+      </div>
+  </div>
+
+  <div class="fotter">
+
+  </div>
 </body>
+<script src="./static/js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
 </html>
