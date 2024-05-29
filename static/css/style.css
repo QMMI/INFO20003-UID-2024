@@ -98,19 +98,28 @@ body {
     border-bottom-right-radius: 50px; */
 }
 
+.bannertext{
+    color: #333333
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20% 40%;
+    text-align: left;
+}
+        
 .title {
     color: #0E7242;
     font-size: 28px;
     font-weight: bold;
     margin: 100px 0px;
     text-align: center;
-
 }
+
 .catalogue .box{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .catalogue .item {
     width: 160px;
     height: 160px;
