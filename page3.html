@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jumbopets</title>
+</head>
+<link rel="stylesheet" href="./static/css/style.css">
+<link rel="stylesheet" href="./static/css/swiper.min.css">
+
+
+<body class="bg">
+  <div class="head">
+    <div class="input">
+      <img src="./static/img/search.png" class="icon searchimg">
+      <input id="searchtxt">
+    </div>
+    <div class="logo">
+      <img src="./static/img/logo.png">
+    </div>
+    <div class="fc fe">
+      <img src="./static/img/user.png" class="icon">
+      <img src="./static/img/car.png" class="icon">
+    </div>
+  </div>
+  <div class="menu">
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+    <div class="item">dog</div>
+  </div>
+  <div id="box">
+    <div class="pbox">
+      <div class="plist">
+        <div class="pitem"></div>
+        <div class="pitem"></div>
+        <div class="pitem"></div>
+      </div>
+      <div class="product">
+        
+
+        </div>
+        <div class="m-l-20">
+        <div class="ft20 fb">Hill's Science Diet</div>  
+        <div class="mt-10">Sensitive Stomach & Skin Adult Dry Dog Food 
+          1.18KG</div>
+          <div class="fb mt-10 red">$33.99</div>
+          <div class="mt-50">
+            A dry food designed for dogs with sensitive stomach and skin, providing a balance of nutrition for sensitive digestive systems and to help improve skin and coat health.
+
+          </div>
+          <div class="mt-10">Quantity</div>
+          <div class="mt-20">
+            <input type="number">
+          </div>
+          <div class="btn">
+            <div class="add">Add To Cart</div>
+            <div  class="buy m-l-20"><a href="./page4.html">Buy Now</a</div>
+          </div>
+       
+        </div>
+       
+      </div>
+      <div style="margin: 50px;">
+        <div>REVIEWS
+        </div>
+        <div>
+          ----------------------------------------
+        </div>
+        <div class="fc">
+          <div class="t"></div>
+          <div>
+          <div>Coco</div>
+          <div>The taste is very good, my dog love to eat it ！！！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="search">
+    <div class="coe mt-10">home>search</div>
+    <div class="ft20 mt-20">Your search for "dog" returned 4 results</div>
+    <div class="catalogue">
+      <div class="title">Our Product</div>
+      <div class="box">
+        <div class="item2">
+          <div class="fdx">
+            <img src="./static/img/user.png">
+            <div class="desc">Hill's Prescription Diet Metabolic Dog Food</div>
+            <div class="desc">$ 123</div>
+          </div>
+
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+        <div class="item2">
+          <img src="./static/img/user.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="./static/js/swiper.min.js"></script>
+<script src="./static/js/jquery.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $("#search").hide()
+
+    $(".searchimg").on("click", function () {
+     var txt = $("#searchtxt").val()
+      if(!txt){
+        alert('please input search')
+        $("#search").hide()
+        $("#box").show()
+      }else{
+      $("#box").hide()
+      $("#search").show()
+      }
+    });
+  });
+
+</script>
+
+</html>
