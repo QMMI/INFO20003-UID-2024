@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JumboPets</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+</head>
+
+<body style="background-color: white;">
+    <!-- header -->
+    <div class="header responsive-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="d-flex align-items-center h-100 header-left">
+                        <div class="header-left__phone">
+                            <div class="responsive-2" id="phoneBtn">
+                                <img class="d-block" src="./img/menu.png" alt="menu">
+                            </div>
+                            <div>
+                                <img class="d-block" src="./img/search.png" alt="search bar">
+                            </div>
+                        </div>
+                        <div class="header-left__pc">
+                            <div class="d-flex align-items-center header-left__search">
+                                <img class="d-block" src="./img/search.png" alt="search bar">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex justify-content-center align-items-center h-100 header-logo">
+                        <a href="./index.html" class="d-block"><img class="d-block" src="./img/JumboPetsLogo.png" alt="Jumbopets"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex justify-content-end align-items-center header-option h-100">
+                        <div class="responsive-2">
+                            <img class="d-flex" src="./img/account.png" alt="account">
+                        </div>
+                        <div>
+                            <a href="./cart.html"> <img class="d-flex" src="./img/cart.png" alt="cart"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive-1 bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#">
+                        <div class="d-flex cart-back">
+                            <img src="./img/back.png" alt="">
+                            <div>Continue shopping</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;overflow:hidden;" class="responsive-1">
+        <div class="container">
+            <div class="row g-5">
+                <div class="responsive-8">
+                    <div class="payment">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex payment-step align-items-center">
+                                <img src="./img/status1.png" alt="">
+                                <div class="payment-step__active ps-4">
+                                    Delivery
+                                </div>
+                            </div>
+                            <div class="d-flex payment-step align-items-center px-5">
+                                <img src="./img/status2.png" alt="">
+                                <div class="ps-4">
+                                    Payment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-form responsive-1">
+                            <div class="row">
+                                <div class="col-6 mb-4">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <input type="text" placeholder="Email Address">
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <input type="text" placeholder="Mobile Phone">
+                                </div>
+                                <div class="col-12  mb-4">
+                                    <input type="Address" placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="payment-btn d-flex justify-content-end pc-container">
+                                <a href="./buy.html"><button>Continue to Payment</button></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-9">
+                    <div>
+                        <div class="payment-total__title responsive-11">Order Summary</div>
+                        <div>
+                            <div class="d-flex payment-total__item mb-2">
+                                <div class="payment-total__pic">
+                                    <img src="./img/Product6.png" alt="">
+                                </div>
+                                <div class="payment-total__info">
+                                    <div class="payment-total__desc">Black Hawk Original Lamb & Rice Adult Dry Dog Food
+                                        20KG</div>
+                                    <div class="payment-total__num">x1</div>
+                                </div>
+                            </div>
+                            <div class="d-flex payment-total__item mb-2">
+                                <div class="payment-total__pic">
+                                    <img src="./img/Product7.png" alt="">
+                                </div>
+                                <div class="payment-total__info">
+                                    <div class="payment-total__desc">Black Hawk Original Lamb & Rice Adult Dry Dog Food
+                                        20KG</div>
+                                    <div class="payment-total__num">x1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-total__count responsive-10 mb-4">
+                            <div class="d-flex justify-content-between payment-total__shipping">
+                                <div>Shipping</div>
+                                <div>$7.95</div>
+                            </div>
+                            <div class="d-flex justify-content-between payment-total__subtotal">
+                                <div>Subtotal</div>
+                                <div>$302.99</div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between payment-total__total">
+                            <div>
+                                <div>Total</div>
+                                <div class="payment-total__subdesc">Including taxes</div>
+                            </div>
+                            <div class="payment-total__price">$310.94</div>
+                        </div>
+                    </div>
+                    <div class="payment-btn d-flex justify-content-end my-3 phone-container">
+                        <a href="./buy.html"><button>Continue to Payment</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- phone -->
+    <div class="phone" id="phone">
+        <div class="phone-box">
+            <div class="phone-close" id="phoneClose">
+                x
+            </div>
+            <div class="phone-link">
+                <a href="./search.html">Dog</a>
+                <a href="./search.html">Cat</a>
+                <a href="./search.html">Small Animals</a>
+                <a href="./search.html">Bird</a>
+                <a href="./search.html">Fish</a>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
